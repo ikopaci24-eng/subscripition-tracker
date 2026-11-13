@@ -1,0 +1,98 @@
+
+:root {
+  --primary: #2563eb;
+  --background: #f3f6fb;
+  --white: #ffffff;
+  --border: #dbe2ea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: #1f2937;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 24px;
+  text-align: center;
+}
+
+main {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+section {
+  background: var(--white);
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #00000012;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+input, button {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: 2px solid var(--primary);
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #e8efff;
+}
+
+section:has(table) {
+  overflow-x: auto;
+}
+
+.expired {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.active {
+  color: #16a34a;
+  font-weight: bold;
+}
