@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Subscription Tracker</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Add Subscription</h2>
+      <form id="subscriptionForm">
+        <label for="service">Service</label>
+        <input type="text" id="service" required>
+
+        <label for="provider">Provider</label>
+        <input type="text" id="provider" required>
+
+        <label for="subscriber">Subscriber</label>
+        <input type="text" id="subscriber" required>
+
+        <label for="renewalDate">Renewal Date</label>
+        <input type="date" id="renewalDate" required>
+
+        <label for="category">Category</label>
+        <input type="text" id="category" required>
+
+        <button type="submit">Add Subscription</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Subscriptions</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Provider</th>
+            <th>Subscriber</th>
+            <th>Renewal Date</th>
+            <th>Category</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="subscriptionTable"></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Summary</h2>
+      <p>Total Subscriptions: <span id="total">0</span></p>
+      <p>Expired Subscriptions: <span id="expired">0</span></p>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
